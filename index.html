@@ -4,118 +4,109 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#062b68">
-  <title>Loot Repetido | Pokémon TCG em Mogi das Cruzes</title>
-  <meta name="description" content="Pokémon TCG, boosters, Mystery Packs e acessórios para colecionadores em Mogi das Cruzes. Compre na Loot Repetido pelo iFood ou Shopee.">
+  <title>O Loot Repetido | Pokémon TCG em Mogi das Cruzes</title>
+  <meta name="description" content="O Loot Repetido: Pokémon TCG, boosters, Mystery Packs e acessórios para colecionadores em Mogi das Cruzes. Confira o catálogo e compre pelo iFood, Shopee ou WhatsApp.">
   <link rel="canonical" href="https://lootrepetido.rocco-tech.com/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Loot Repetido | Pokémon TCG em Mogi">
+  <meta property="og:title" content="O Loot Repetido | Pokémon TCG em Mogi">
   <meta property="og:description" content="Cartas, boosters, Mystery Packs e acessórios para quem vive Pokémon TCG.">
   <meta property="og:url" content="https://lootrepetido.rocco-tech.com/">
   <meta property="og:image" content="https://lootrepetido.rocco-tech.com/assets/loot-repetido-logo.png">
   <link rel="icon" type="image/png" href="/assets/loot-repetido-logo.png">
   <style>
     :root {
-      --blue: #07377d;
-      --blue-deep: #061e49;
-      --blue-bright: #0876e8;
-      --yellow: #ffd523;
-      --red: #ef313b;
-      --ink: #10234a;
-      --muted: #5c6b84;
-      --paper: #f7f9fc;
-      --white: #fff;
-      --line: #dce4ef;
-      --radius: 22px;
-      --shadow: 0 14px 38px rgba(6,30,73,.09);
+      --blue: #07377d; --blue-deep: #061e49; --blue-bright: #0876e8;
+      --yellow: #ffd523; --red: #ef313b; --ink: #10234a; --muted: #5c6b84;
+      --paper: #f7f9fc; --white: #fff; --line: #dce4ef;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body {
-      margin: 0; color: var(--ink); background: var(--paper);
-      font-family: Inter, "Avenir Next", Avenir, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.55;
-    }
-    a { color: inherit; }
-    .wrap { width: min(1160px, calc(100% - 44px)); margin: 0 auto; }
-    .topline { height: 6px; background: linear-gradient(90deg,var(--blue) 0 72%,var(--yellow) 72% 90%,var(--red) 90%); }
-    .announcement { background: var(--blue-deep); color: #fff; font-size: .78rem; text-align: center; padding: 8px 14px; letter-spacing: .035em; }
-    .announcement strong { color: var(--yellow); }
-    header { background: rgba(255,255,255,.94); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(12px); }
-    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 82px; gap: 22px; }
-    .brand { display: inline-flex; align-items: center; text-decoration: none; gap: 12px; min-width: 0; }
-    .brand img { width: 60px; height: 60px; object-fit: contain; }
-    .brand-copy { display: flex; flex-direction: column; line-height: 1.02; }
-    .brand-copy b { color: var(--blue-deep); font-size: 1.12rem; font-weight: 1000; letter-spacing: -.045em; }
-    .brand-copy span { color: var(--muted); text-transform: uppercase; font-size: .64rem; letter-spacing: .12em; margin-top: 6px; font-weight: 800; }
-    .navlinks { display: flex; align-items: center; gap: 25px; font-size: .9rem; font-weight: 750; }
-    .navlinks a { text-decoration: none; }
-    .navlinks a:hover { color: var(--blue-bright); }
-    .navlinks .nav-buy { background: var(--yellow); color: var(--blue-deep); padding: 12px 17px; border-radius: 9px; box-shadow: 0 3px 0 #d2a900; }
-    .hero { background: var(--white); border-bottom: 1px solid var(--line); overflow: hidden; }
-    .hero-grid { display: grid; grid-template-columns: 1.04fr .96fr; align-items: center; gap: clamp(24px,5vw,68px); padding-top: 62px; padding-bottom: 68px; }
-    .kicker { display: inline-flex; align-items: center; gap: 9px; font-size: .76rem; text-transform: uppercase; letter-spacing: .13em; color: var(--blue); font-weight: 900; }
-    .kicker:before { content: ""; width: 24px; height: 4px; background: var(--red); border-radius: 5px; }
-    h1 { font-size: clamp(3.05rem,6.6vw,6.15rem); letter-spacing: -.075em; line-height: .92; margin: 22px 0 24px; color: var(--blue-deep); max-width: 700px; }
-    h1 .yellow { color: var(--blue); background: linear-gradient(transparent 60%,var(--yellow) 60%); }
-    .hero-copy { max-width: 535px; color: var(--muted); font-size: clamp(1rem,1.5vw,1.15rem); }
-    .hero-copy strong { color: var(--ink); }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; text-decoration: none; font-weight: 850; font-size: .93rem; border: 1.5px solid transparent; border-radius: 10px; padding: 13px 18px; transition: transform .16s ease, box-shadow .16s ease, background .16s ease; }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-yellow { background: var(--yellow); color: var(--blue-deep); box-shadow: 0 4px 0 #d0a800; }
-    .btn-yellow:hover { background: #ffe36b; }
-    .btn-outline { background: #fff; border-color: #c8d3e3; color: var(--blue); }
-    .btn-outline:hover { border-color: var(--blue); }
-    .hero-note { margin-top: 21px; font-size: .82rem; color: #77849a; }
-    .visual { position: relative; min-height: 420px; display: flex; align-items: center; justify-content: center; }
-    .visual-bg { position: absolute; inset: 20px 10px 18px 30px; border-radius: 30px; background: #edf3fb; border: 1px solid #dce7f5; overflow: hidden; }
-    .visual-bg:before { content:""; position:absolute; width: 360px; height: 360px; border: 1px solid rgba(7,55,125,.12); border-radius: 50%; right:-100px; top:-115px; }
-    .visual-bg:after { content:""; position:absolute; width: 280px; height: 280px; border: 28px solid rgba(255,213,35,.55); border-radius: 50%; left:-130px; bottom:-160px; }
-    .logo-feature { width: min(92%, 420px); position: relative; z-index: 2; filter: drop-shadow(0 16px 16px rgba(6,30,73,.15)); }
-    .stamp { position: absolute; z-index: 3; right: 2px; bottom: 42px; background: var(--yellow); color: var(--blue-deep); border: 2px solid var(--blue-deep); padding: 12px 16px; border-radius: 9px; font-weight: 1000; text-transform: uppercase; letter-spacing: .03em; transform: rotate(3deg); box-shadow: 4px 4px 0 var(--blue-deep); }
-    .proofbar { background: var(--blue); color: white; }
-    .proof-inner { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; padding: 19px 0; }
-    .proof { display: flex; gap: 12px; align-items: center; justify-content: center; font-size: .88rem; font-weight: 750; }
-    .proof-icon { display: grid; place-items: center; flex: 0 0 35px; height: 35px; border-radius: 50%; background: var(--yellow); color: var(--blue-deep); font-weight: 1000; }
-    section.section { padding: 76px 0; }
-    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 30px; }
-    .section-head .text { max-width: 660px; }
-    .eyebrow { color: var(--red); text-transform: uppercase; letter-spacing: .14em; font-weight: 900; font-size: .74rem; }
-    h2 { font-size: clamp(2rem,4vw,3.4rem); line-height: 1; letter-spacing: -.065em; color: var(--blue-deep); margin: 12px 0; }
-    .section-head p { color: var(--muted); margin: 12px 0 0; max-width: 620px; }
-    .small-link { color: var(--blue); font-weight: 850; text-decoration: none; white-space: nowrap; }
-    .small-link:hover { text-decoration: underline; }
-    .categories { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
-    .category { background: white; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; transition: transform .18s ease, box-shadow .18s ease; }
-    .category:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-    .category-top { min-height: 154px; display: grid; place-items: center; position: relative; overflow: hidden; }
-    .category-top:after { content:""; position:absolute; width:100px; height:100px; border: 13px solid rgba(255,255,255,.65); border-radius:50%; right:-24px; top:-30px; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:Inter,"Avenir Next",Avenir,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.55; }
+    a { color:inherit; }
+    .wrap { width:min(1160px,calc(100% - 44px)); margin:0 auto; }
+    .topline { height:6px; background:linear-gradient(90deg,var(--blue) 0 72%,var(--yellow) 72% 90%,var(--red) 90%); }
+    .announcement { background:var(--blue-deep); color:white; font-size:.78rem; text-align:center; padding:8px 14px; letter-spacing:.035em; }
+    .announcement strong { color:var(--yellow); }
+    header { background:rgba(255,255,255,.95); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:20; backdrop-filter:blur(12px); }
+    .nav { display:flex; align-items:center; justify-content:space-between; min-height:82px; gap:22px; }
+    .brand { display:inline-flex; align-items:center; text-decoration:none; gap:12px; min-width:0; }
+    .brand img { width:60px; height:60px; object-fit:contain; }
+    .brand-copy { display:flex; flex-direction:column; line-height:1.02; }
+    .brand-copy b { color:var(--blue-deep); font-size:1.12rem; font-weight:1000; letter-spacing:-.045em; }
+    .brand-copy span { color:var(--muted); text-transform:uppercase; font-size:.64rem; letter-spacing:.12em; margin-top:6px; font-weight:800; }
+    .navlinks { display:flex; align-items:center; gap:23px; font-size:.9rem; font-weight:750; }
+    .navlinks a { text-decoration:none; }
+    .navlinks a:hover { color:var(--blue-bright); }
+    .navlinks .nav-buy { background:var(--yellow); color:var(--blue-deep); padding:12px 17px; border-radius:9px; box-shadow:0 3px 0 #d2a900; }
+    .hero { background:white; border-bottom:1px solid var(--line); overflow:hidden; }
+    .hero-grid { display:grid; grid-template-columns:1.04fr .96fr; align-items:center; gap:clamp(24px,5vw,68px); padding-top:62px; padding-bottom:68px; }
+    .kicker { display:inline-flex; align-items:center; gap:9px; font-size:.76rem; text-transform:uppercase; letter-spacing:.13em; color:var(--blue); font-weight:900; }
+    .kicker:before { content:""; width:24px; height:4px; background:var(--red); border-radius:5px; }
+    h1 { font-size:clamp(3.05rem,6.6vw,6.15rem); letter-spacing:-.075em; line-height:.92; margin:22px 0 24px; color:var(--blue-deep); max-width:700px; }
+    h1 .yellow { color:var(--blue); background:linear-gradient(transparent 60%,var(--yellow) 60%); }
+    .hero-copy { max-width:535px; color:var(--muted); font-size:clamp(1rem,1.5vw,1.15rem); }
+    .hero-copy strong { color:var(--ink); }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:9px; text-decoration:none; font-weight:850; font-size:.93rem; border:1.5px solid transparent; border-radius:10px; padding:13px 18px; transition:transform .16s ease,box-shadow .16s ease,background .16s ease; cursor:pointer; }
+    .btn:hover { transform:translateY(-2px); }
+    .btn-yellow { background:var(--yellow); color:var(--blue-deep); box-shadow:0 4px 0 #d0a800; }
+    .btn-yellow:hover { background:#ffe36b; }
+    .btn-outline { background:white; border-color:#c8d3e3; color:var(--blue); }
+    .btn-outline:hover { border-color:var(--blue); }
+    .hero-note { margin-top:21px; font-size:.82rem; color:#77849a; }
+    .visual { position:relative; min-height:420px; display:flex; align-items:center; justify-content:center; }
+    .visual-bg { position:absolute; inset:20px 10px 18px 30px; border-radius:30px; background:#edf3fb; border:1px solid #dce7f5; overflow:hidden; }
+    .visual-bg:before { content:""; position:absolute; width:360px; height:360px; border:1px solid rgba(7,55,125,.12); border-radius:50%; right:-100px; top:-115px; }
+    .visual-bg:after { content:""; position:absolute; width:280px; height:280px; border:28px solid rgba(255,213,35,.55); border-radius:50%; left:-130px; bottom:-160px; }
+    .logo-feature { width:min(92%,420px); position:relative; z-index:2; filter:drop-shadow(0 16px 16px rgba(6,30,73,.15)); }
+    .stamp { position:absolute; z-index:3; right:2px; bottom:42px; background:var(--yellow); color:var(--blue-deep); border:2px solid var(--blue-deep); padding:12px 16px; border-radius:9px; font-weight:1000; text-transform:uppercase; letter-spacing:.03em; transform:rotate(3deg); box-shadow:4px 4px 0 var(--blue-deep); }
+    .proofbar { background:var(--blue); color:white; }
+    .proof-inner { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; padding:19px 0; }
+    .proof { display:flex; gap:12px; align-items:center; justify-content:center; font-size:.88rem; font-weight:750; }
+    .proof-icon { display:grid; place-items:center; flex:0 0 35px; height:35px; border-radius:50%; background:var(--yellow); color:var(--blue-deep); font-weight:1000; }
+    section.section { padding:76px 0; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:25px; margin-bottom:30px; }
+    .section-head .text { max-width:660px; }
+    .eyebrow { color:var(--red); text-transform:uppercase; letter-spacing:.14em; font-weight:900; font-size:.74rem; }
+    h2 { font-size:clamp(2rem,4vw,3.4rem); line-height:1; letter-spacing:-.065em; color:var(--blue-deep); margin:12px 0; }
+    .section-head p { color:var(--muted); margin:12px 0 0; max-width:620px; }
+    .small-link { color:var(--blue); font-weight:850; text-decoration:none; white-space:nowrap; }
+    .small-link:hover { text-decoration:underline; }
+    .categories { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .category { background:white; border:1px solid var(--line); border-radius:16px; overflow:hidden; transition:transform .18s ease,box-shadow .18s ease; }
+    .category:hover { transform:translateY(-4px); box-shadow:0 14px 38px rgba(6,30,73,.09); }
+    .category-top { min-height:154px; display:grid; place-items:center; position:relative; overflow:hidden; }
+    .category-top:after { content:""; position:absolute; width:100px; height:100px; border:13px solid rgba(255,255,255,.65); border-radius:50%; right:-24px; top:-30px; }
     .category:nth-child(1) .category-top { background:#fff0b0; }
     .category:nth-child(2) .category-top { background:#d9eaff; }
     .category:nth-child(3) .category-top { background:#ffe1df; }
     .category:nth-child(4) .category-top { background:#dcefe7; }
-    .category-symbol { font-size: 3.3rem; z-index: 1; filter: drop-shadow(0 5px 0 rgba(6,30,73,.1)); }
-    .category-body { padding: 18px; }
-    .category h3 { margin: 0 0 6px; font-size: 1.06rem; color: var(--blue-deep); }
-    .category p { margin: 0; color: var(--muted); font-size: .88rem; }
-    .feature { background: var(--blue-deep); color: white; }
-    .feature-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: center; }
-    .feature .eyebrow { color: var(--yellow); }
-    .feature h2 { color: white; }
-    .feature p { color: #d2dced; max-width: 490px; }
-    .feature-mark { display: flex; align-items: center; justify-content: center; min-height: 260px; background: #0b2b61; border: 1px solid #315286; border-radius: 22px; position: relative; overflow: hidden; }
+    .category-symbol { font-size:3.3rem; z-index:1; }
+    .category-body { padding:18px; }
+    .category h3 { margin:0 0 6px; font-size:1.06rem; color:var(--blue-deep); }
+    .category p { margin:0; color:var(--muted); font-size:.88rem; }
+    .catalog-cta { margin-top:24px; border-radius:16px; background:var(--yellow); border:1px solid #efd04c; padding:22px 25px; display:flex; justify-content:space-between; align-items:center; gap:18px; }
+    .catalog-cta h3 { margin:0 0 3px; color:var(--blue-deep); font-size:1.2rem; }
+    .catalog-cta p { margin:0; color:#4d5b72; font-size:.91rem; }
+    .catalog-cta .btn { background:var(--blue-deep); color:white; white-space:nowrap; }
+    .feature { background:var(--blue-deep); color:white; }
+    .feature-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:48px; align-items:center; }
+    .feature .eyebrow { color:var(--yellow); }
+    .feature h2 { color:white; }
+    .feature p { color:#d2dced; max-width:490px; }
+    .feature-mark { display:flex; align-items:center; justify-content:center; min-height:260px; background:#0b2b61; border:1px solid #315286; border-radius:22px; position:relative; overflow:hidden; }
     .feature-mark:before { content:""; position:absolute; width:250px; height:250px; border:1px solid #42659b; border-radius:50%; }
-    .feature-mark img { width: min(62%, 235px); position: relative; filter: drop-shadow(0 10px 20px rgba(0,0,0,.2)); }
-    .channels { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    .channel { border: 1px solid var(--line); background: white; border-radius: 18px; padding: 24px; display: flex; align-items: center; gap: 17px; min-width: 0; }
-    .channel-icon { flex: 0 0 52px; width: 52px; height: 52px; display: grid; place-items: center; border-radius: 14px; background: #eef3fb; color: var(--blue); font-size: 1.5rem; font-weight: 900; }
-    .channel h3 { margin: 0 0 3px; color: var(--blue-deep); }
-    .channel p { margin: 0; color: var(--muted); font-size: .88rem; }
-    .channel .arrow { margin-left: auto; color: var(--blue); font-size: 1.3rem; text-decoration: none; padding-left: 8px; }
-    .local-card { margin-top: 24px; border-radius: 18px; background: #fff5c9; border: 1px solid #f0d96c; padding: 24px 26px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-    .local-card h3 { color: var(--blue-deep); margin: 0 0 4px; }
-    .local-card p { color: #58627a; margin: 0; font-size: .92rem; }
-    footer { background: #041633; color: white; padding: 38px 0 24px; }
+    .feature-mark img { width:min(62%,235px); position:relative; }
+    .channels { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .channel { border:1px solid var(--line); background:white; border-radius:18px; padding:24px; display:flex; align-items:center; gap:17px; min-width:0; }
+    .channel-icon { flex:0 0 52px; width:52px; height:52px; display:grid; place-items:center; border-radius:14px; background:#eef3fb; color:var(--blue); font-size:1.5rem; font-weight:900; }
+    .channel h3 { margin:0 0 3px; color:var(--blue-deep); }
+    .channel p { margin:0; color:var(--muted); font-size:.88rem; }
+    .channel .arrow { margin-left:auto; color:var(--blue); font-size:1.3rem; text-decoration:none; padding-left:8px; }
+    .local-card { margin-top:24px; border-radius:18px; background:#fff5c9; border:1px solid #f0d96c; padding:24px 26px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .local-card h3 { color:var(--blue-deep); margin:0 0 4px; }
+    .local-card p { color:#58627a; margin:0; font-size:.92rem; }
+    footer { background:#041633; color:white; padding:38px 0 24px; }
     .footer-main { display:flex; justify-content:space-between; align-items:flex-start; gap:30px; flex-wrap:wrap; }
     .footer-brand { display:flex; gap:13px; align-items:center; }
     .footer-brand img { width:64px; height:64px; object-fit:contain; }
@@ -125,52 +116,19 @@
     .socials a { text-decoration:none; color:white; border:1px solid #435778; padding:9px 13px; border-radius:9px; font-size:.86rem; font-weight:750; }
     .socials a:hover { border-color:var(--yellow); color:var(--yellow); }
     .copyright { margin-top:28px; border-top:1px solid #233a5d; padding-top:18px; color:#91a4c1; font-size:.78rem; }
-    @media (max-width: 860px) {
-      .hero-grid, .feature-grid { grid-template-columns:1fr; }
-      .hero-grid { padding-top:48px; }
-      .visual { min-height:350px; }
-      .logo-feature { width:min(78%,360px); }
-      .categories { grid-template-columns:repeat(2,1fr); }
-      .section-head { align-items:flex-start; flex-direction:column; }
-      .proof-inner { grid-template-columns:1fr; gap:12px; }
-      .proof { justify-content:flex-start; }
-    }
-    @media (max-width: 560px) {
-      .wrap { width:calc(100% - 30px); }
-      .nav { min-height:70px; }
-      .brand img { width:48px; height:48px; }
-      .brand-copy b { font-size:1rem; }
-      .navlinks { gap:0; }
-      .navlinks a:not(.nav-buy) { display:none; }
-      .navlinks .nav-buy { padding:10px 12px; font-size:.82rem; }
-      .hero-grid { padding-top:40px; padding-bottom:42px; gap:20px; }
-      h1 { font-size:clamp(3rem,14vw,4.5rem); }
-      .visual { min-height:295px; }
-      .visual-bg { inset:8px 7px 10px; border-radius:22px; }
-      .logo-feature { width:min(74%,270px); }
-      .stamp { bottom:18px; right:0; font-size:.72rem; padding:9px 11px; }
-      section.section { padding:52px 0; }
-      .categories { gap:10px; }
-      .category-top { min-height:115px; }
-      .category-body { padding:13px; }
-      .category h3 { font-size:.98rem; }
-      .category p { font-size:.82rem; }
-      .channels { grid-template-columns:1fr; }
-      .channel { padding:18px; }
-      .local-card { align-items:flex-start; flex-direction:column; padding:20px; }
-      .feature-grid { gap:25px; }
-    }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; *, *:before, *:after { transition:none !important; } } }
+    @media(max-width:860px) { .hero-grid,.feature-grid { grid-template-columns:1fr; } .hero-grid { padding-top:48px; } .visual { min-height:350px; } .logo-feature { width:min(78%,360px); } .categories { grid-template-columns:repeat(2,1fr); } .section-head { align-items:flex-start; flex-direction:column; } .proof-inner { grid-template-columns:1fr; gap:12px; } .proof { justify-content:flex-start; } }
+    @media(max-width:560px) { .wrap { width:calc(100% - 30px); } .nav { min-height:70px; } .brand img { width:48px; height:48px; } .brand-copy b { font-size:1rem; } .navlinks a:not(.nav-buy) { display:none; } .navlinks .nav-buy { padding:10px 12px; font-size:.82rem; } .hero-grid { padding-top:40px; padding-bottom:42px; gap:20px; } h1 { font-size:clamp(3rem,14vw,4.5rem); } .visual { min-height:295px; } .visual-bg { inset:8px 7px 10px; border-radius:22px; } .logo-feature { width:min(74%,270px); } .stamp { bottom:18px; right:0; font-size:.72rem; padding:9px 11px; } section.section { padding:52px 0; } .categories { gap:10px; } .category-top { min-height:115px; } .category-body { padding:13px; } .category h3 { font-size:.98rem; } .category p { font-size:.82rem; } .channels { grid-template-columns:1fr; } .channel { padding:18px; } .local-card,.catalog-cta { align-items:flex-start; flex-direction:column; padding:20px; } .feature-grid { gap:25px; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*:before,*:after { transition:none!important; } }
   </style>
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Store",
-    "name": "Loot Repetido",
-    "url": "https://lootrepetido.rocco-tech.com/",
-    "description": "Pokémon TCG, cartas colecionáveis e acessórios em Mogi das Cruzes, SP.",
-    "areaServed": {"@type":"City","name":"Mogi das Cruzes"},
-    "sameAs": [
+    "@context":"https://schema.org",
+    "@type":"Store",
+    "name":"O Loot Repetido",
+    "url":"https://lootrepetido.rocco-tech.com/",
+    "description":"Pokémon TCG, cartas colecionáveis e acessórios em Mogi das Cruzes, SP.",
+    "areaServed":{"@type":"City","name":"Mogi das Cruzes"},
+    "sameAs":[
       "https://www.instagram.com/lootrepetido/",
       "https://www.tiktok.com/@lootrepetido",
       "https://shopee.com.br/shop/308054439",
@@ -184,18 +142,16 @@
   <div class="announcement"><strong>POKÉMON TCG EM MOGI</strong> &nbsp;·&nbsp; Seu próximo achado está por aqui.</div>
   <header>
     <div class="wrap nav">
-      <a class="brand" href="#inicio" aria-label="Loot Repetido - início">
-        <img src="/assets/loot-repetido-logo.png" alt="Logo Loot Repetido">
-        <span class="brand-copy"><b>LOOT REPETIDO</b><span>Cartas · Coleção · Descobertas</span></span>
+      <a class="brand" href="index.html" aria-label="O Loot Repetido - início">
+        <img src="assets/loot-repetido-logo.png" alt="Logo do Loot Repetido">
+        <span class="brand-copy"><b>O LOOT REPETIDO</b><span>Cartas · Coleção · Descobertas</span></span>
       </a>
       <nav class="navlinks" aria-label="Navegação principal">
-        <a href="#colecao">O que tem</a>
-        <a href="#sobre">A Loot</a>
-        <a class="nav-buy" href="#comprar">Comprar ↗</a>
+        <a href="#colecao">O que tem</a><a href="#sobre">O Loot</a>
+        <a class="nav-buy" href="catalogo.html">Catálogo completo ↗</a>
       </nav>
     </div>
   </header>
-
   <main id="inicio">
     <section class="hero">
       <div class="wrap hero-grid">
@@ -204,126 +160,64 @@
           <h1>Caça ao hit.<br><span class="yellow">Coleção feliz.</span></h1>
           <p class="hero-copy">Cartas, boosters, Mystery Packs e acessórios para quem sabe que <strong>abrir só mais um pacotinho</strong> nunca é só mais um pacotinho.</p>
           <div class="actions">
-            <a class="btn btn-yellow" href="https://www.ifood.com.br/delivery/mogi-das-cruzes-sp/loot-repetido-alto-ipiranga/c5c9f5bb-4ca8-4418-95b5-305915b095b6?utm_medium=share" target="_blank" rel="noopener noreferrer">Pedir pelo iFood <span>↗</span></a>
-            <a class="btn btn-outline" href="https://shopee.com.br/shop/308054439" target="_blank" rel="noopener noreferrer">Explorar na Shopee <span>↗</span></a>
+            <a class="btn btn-yellow" href="https://www.ifood.com.br/delivery/mogi-das-cruzes-sp/loot-repetido-alto-ipiranga/c5c9f5bb-4ca8-4418-95b5-305915b095b6?utm_medium=share" target="_blank" rel="noopener noreferrer">Pedir pelo iFood ↗</a>
+            <a class="btn btn-outline" href="https://shopee.com.br/shop/308054439" target="_blank" rel="noopener noreferrer">Explorar na Shopee ↗</a>
           </div>
-          <div class="hero-note">Uma loja independente para fãs e colecionadores em Mogi das Cruzes, SP.</div>
+          <p class="hero-note">Uma loja independente para fãs e colecionadores em Mogi das Cruzes, SP.</p>
         </div>
         <div class="visual">
           <div class="visual-bg"></div>
-          <img class="logo-feature" src="/assets/loot-repetido-logo.png" alt="Emblema da Loot Repetido com uma Pokébola estilizada e detalhes em azul, branco e amarelo">
+          <img class="logo-feature" src="assets/loot-repetido-logo.png" alt="Emblema do Loot Repetido com Pokébola estilizada">
           <div class="stamp">Bora colecionar? ★</div>
         </div>
       </div>
     </section>
-
-    <div class="proofbar">
-      <div class="wrap proof-inner">
-        <div class="proof"><span class="proof-icon">01</span><span>Pokémon TCG e colecionáveis</span></div>
-        <div class="proof"><span class="proof-icon">02</span><span>Compre online pelos nossos canais</span></div>
-        <div class="proof"><span class="proof-icon">03</span><span>Da Loot direto pra sua coleção</span></div>
-      </div>
-    </div>
-
+    <div class="proofbar"><div class="wrap proof-inner">
+      <div class="proof"><span class="proof-icon">01</span><span>Pokémon TCG e colecionáveis</span></div>
+      <div class="proof"><span class="proof-icon">02</span><span>Compre online pelos nossos canais</span></div>
+      <div class="proof"><span class="proof-icon">03</span><span>Do Loot direto pra sua coleção</span></div>
+    </div></div>
     <section class="section" id="colecao">
       <div class="wrap">
-        <div class="section-head">
-          <div class="text">
-            <div class="eyebrow">O que você veio procurar?</div>
-            <h2>Seu próximo item<br>favorito pode estar aqui.</h2>
-            <p>Pra abrir, colecionar, proteger ou presentear. Confira as categorias e veja o que está disponível nos nossos canais de venda.</p>
-          </div>
-          <a class="small-link" href="#comprar">Ver onde comprar ↗</a>
-        </div>
+        <div class="section-head"><div class="text">
+          <div class="eyebrow">O que você veio procurar?</div>
+          <h2>Seu próximo item<br>favorito pode estar aqui.</h2>
+          <p>Pra abrir, colecionar, proteger ou presentear. Confira as categorias e veja o que está disponível nos nossos canais de venda.</p>
+        </div><a class="small-link" href="catalogo.html">Ver catálogo completo ↗</a></div>
         <div class="categories">
-          <article class="category">
-            <div class="category-top"><span class="category-symbol" aria-hidden="true">🃏</span></div>
-            <div class="category-body"><h3>Cartas Pokémon</h3><p>Novas descobertas para sua coleção.</p></div>
-          </article>
-          <article class="category">
-            <div class="category-top"><span class="category-symbol" aria-hidden="true">🎴</span></div>
-            <div class="category-body"><h3>Boosters & blisters</h3><p>A emoção de revelar cada carta.</p></div>
-          </article>
-          <article class="category">
-            <div class="category-top"><span class="category-symbol" aria-hidden="true">🎁</span></div>
-            <div class="category-body"><h3>Mystery Packs</h3><p>Uma surpresa a cada abertura.</p></div>
-          </article>
-          <article class="category">
-            <div class="category-top"><span class="category-symbol" aria-hidden="true">🛡️</span></div>
-            <div class="category-body"><h3>Acessórios</h3><p>Proteção pros seus cards favoritos.</p></div>
-          </article>
+          <article class="category"><div class="category-top"><span class="category-symbol" aria-hidden="true">🃏</span></div><div class="category-body"><h3>Cartas Pokémon</h3><p>Novas descobertas para sua coleção.</p></div></article>
+          <article class="category"><div class="category-top"><span class="category-symbol" aria-hidden="true">🎴</span></div><div class="category-body"><h3>Boosters & blisters</h3><p>A emoção de revelar cada carta.</p></div></article>
+          <article class="category"><div class="category-top"><span class="category-symbol" aria-hidden="true">🎁</span></div><div class="category-body"><h3>Mystery Packs</h3><p>Uma surpresa a cada abertura.</p></div></article>
+          <article class="category"><div class="category-top"><span class="category-symbol" aria-hidden="true">🛡️</span></div><div class="category-body"><h3>Acessórios</h3><p>Proteção pros seus cards favoritos.</p></div></article>
         </div>
+        <div class="catalog-cta"><div><h3>Quer ver tudo o que tem na loja?</h3><p>Confira nosso catálogo completo e encontre seu próximo loot.</p></div><a class="btn" href="catalogo.html">Ver catálogo completo ↗</a></div>
       </div>
     </section>
-
     <section class="section feature" id="sobre">
       <div class="wrap feature-grid">
-        <div>
-          <div class="eyebrow">Sobre a Loot</div>
-          <h2>Tem carta que é repetida.<br>Paixão por coleção, nunca.</h2>
-          <p>A Loot Repetido é uma loja de colecionáveis em Mogi das Cruzes, feita para quem curte Pokémon TCG e a alegria de encontrar mais uma peça para a coleção. Acompanhe as novidades e descubra os produtos disponíveis.</p>
-          <a class="btn btn-yellow" href="https://www.instagram.com/lootrepetido/" target="_blank" rel="noopener noreferrer">Conheça a Loot no Instagram ↗</a>
+        <div><div class="eyebrow">Sobre o Loot</div><h2>Tem carta que é repetida.<br>Paixão por coleção, nunca.</h2>
+          <p>O Loot Repetido é uma loja de colecionáveis em Mogi das Cruzes, feita para quem curte Pokémon TCG e a alegria de encontrar mais uma peça para a coleção. Acompanhe as novidades e descubra os produtos disponíveis.</p>
+          <a class="btn btn-yellow" href="https://www.instagram.com/lootrepetido/" target="_blank" rel="noopener noreferrer">Conheça o Loot no Instagram ↗</a>
         </div>
-        <div class="feature-mark">
-          <img src="/assets/loot-repetido-logo.png" alt="" aria-hidden="true">
-        </div>
+        <div class="feature-mark"><img src="assets/loot-repetido-logo.png" alt="" aria-hidden="true"></div>
       </div>
     </section>
-
-    <section class="section" id="comprar">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="text">
-            <div class="eyebrow">Achou seu próximo loot?</div>
-            <h2>Partiu garantir o seu.</h2>
-            <p>Escolha seu canal favorito para consultar o catálogo e os produtos disponíveis.</p>
-          </div>
-        </div>
-        <div class="channels">
-          <div class="channel">
-            <div class="channel-icon">iF</div>
-            <div><h3>Peça pelo iFood</h3><p>Confira a loja e os itens disponíveis em Mogi.</p></div>
-            <a class="arrow" aria-label="Abrir loja no iFood" href="https://www.ifood.com.br/delivery/mogi-das-cruzes-sp/loot-repetido-alto-ipiranga/c5c9f5bb-4ca8-4418-95b5-305915b095b6?utm_medium=share" target="_blank" rel="noopener noreferrer">↗</a>
-          </div>
-          <div class="channel">
-            <div class="channel-icon">S</div>
-            <div><h3>Loja na Shopee</h3><p>Veja produtos e ofertas no nosso catálogo.</p></div>
-            <a class="arrow" aria-label="Abrir loja na Shopee" href="https://shopee.com.br/shop/308054439" target="_blank" rel="noopener noreferrer">↗</a>
-          </div>
-          <div class="channel">
-            <div class="channel-icon">◎</div>
-            <div><h3>Instagram</h3><p>Novidades, conteúdo e bastidores da Loot.</p></div>
-            <a class="arrow" aria-label="Abrir Instagram" href="https://www.instagram.com/lootrepetido/" target="_blank" rel="noopener noreferrer">↗</a>
-          </div>
-          <div class="channel">
-            <div class="channel-icon">♪</div>
-            <div><h3>TikTok</h3><p>Vídeos, cartas e momentos de colecionador.</p></div>
-            <a class="arrow" aria-label="Abrir TikTok" href="https://www.tiktok.com/@lootrepetido" target="_blank" rel="noopener noreferrer">↗</a>
-          </div>
-        </div>
-        <div class="local-card">
-          <div><h3>📍 Loot Repetido · Mogi das Cruzes, SP</h3><p>Compre online pelos nossos canais oficiais e consulte a disponibilidade de cada produto.</p></div>
-          <a class="btn btn-yellow" href="https://www.ifood.com.br/delivery/mogi-das-cruzes-sp/loot-repetido-alto-ipiranga/c5c9f5bb-4ca8-4418-95b5-305915b095b6?utm_medium=share" target="_blank" rel="noopener noreferrer">Ver loja no iFood ↗</a>
-        </div>
+    <section class="section" id="comprar"><div class="wrap">
+      <div class="section-head"><div class="text"><div class="eyebrow">Achou seu próximo loot?</div><h2>Partiu garantir o seu.</h2><p>Escolha seu canal favorito para consultar o catálogo e os produtos disponíveis.</p></div></div>
+      <div class="channels">
+        <div class="channel"><div class="channel-icon">iF</div><div><h3>Pedir pelo iFood</h3><p>Confira a loja e os itens disponíveis em Mogi.</p></div><a class="arrow" aria-label="Abrir loja no iFood" href="https://www.ifood.com.br/delivery/mogi-das-cruzes-sp/loot-repetido-alto-ipiranga/c5c9f5bb-4ca8-4418-95b5-305915b095b6?utm_medium=share" target="_blank" rel="noopener noreferrer">↗</a></div>
+        <div class="channel"><div class="channel-icon">S</div><div><h3>Loja na Shopee</h3><p>Veja produtos e ofertas no nosso catálogo.</p></div><a class="arrow" aria-label="Abrir loja na Shopee" href="https://shopee.com.br/shop/308054439" target="_blank" rel="noopener noreferrer">↗</a></div>
+        <div class="channel"><div class="channel-icon">◎</div><div><h3>Instagram</h3><p>Novidades, conteúdo e bastidores do Loot.</p></div><a class="arrow" aria-label="Abrir Instagram" href="https://www.instagram.com/lootrepetido/" target="_blank" rel="noopener noreferrer">↗</a></div>
+        <div class="channel"><div class="channel-icon">♪</div><div><h3>TikTok</h3><p>Vídeos, cartas e momentos de colecionador.</p></div><a class="arrow" aria-label="Abrir TikTok" href="https://www.tiktok.com/@lootrepetido" target="_blank" rel="noopener noreferrer">↗</a></div>
+        <div class="channel"><div class="channel-icon">☏</div><div><h3>WhatsApp</h3><p>Fale com o Loot diretamente.</p></div><a class="arrow" aria-label="Chamar no WhatsApp" href="https://wa.me/5569981180819" target="_blank" rel="noopener noreferrer">↗</a></div>
       </div>
-    </section>
+      <div class="local-card"><div><h3>📍 O Loot Repetido · Mogi das Cruzes, SP</h3><p>Compre online pelos nossos canais oficiais e consulte a disponibilidade de cada produto.</p></div><a class="btn btn-yellow" href="catalogo.html">Ver catálogo ↗</a></div>
+    </div></section>
   </main>
-
-  <footer>
-    <div class="wrap">
-      <div class="footer-main">
-        <div>
-          <div class="footer-brand"><img src="/assets/loot-repetido-logo.png" alt=""><strong>LOOT REPETIDO</strong></div>
-          <p>Pokémon TCG, colecionáveis e aquela vontade de abrir só mais um pacote. Em Mogi das Cruzes, SP.</p>
-        </div>
-        <div class="socials">
-          <a href="https://www.instagram.com/lootrepetido/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-          <a href="https://www.tiktok.com/@lootrepetido" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
-          <a href="https://shopee.com.br/shop/308054439" target="_blank" rel="noopener noreferrer">Shopee ↗</a>
-        </div>
-      </div>
-      <div class="copyright">© 2026 Loot Repetido · Pokémon TCG em Mogi das Cruzes, SP.</div>
-    </div>
-  </footer>
+  <footer><div class="wrap">
+    <div class="footer-main"><div><div class="footer-brand"><img src="assets/loot-repetido-logo.png" alt=""><strong>O LOOT REPETIDO</strong></div><p>Pokémon TCG, colecionáveis e aquela vontade de abrir só mais um pacote. Em Mogi das Cruzes, SP.</p></div>
+      <div class="socials"><a href="https://wa.me/5569981180819" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="https://www.instagram.com/lootrepetido/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@lootrepetido" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://shopee.com.br/shop/308054439" target="_blank" rel="noopener noreferrer">Shopee ↗</a></div>
+    </div><div class="copyright">© 2026 O Loot Repetido · Pokémon TCG em Mogi das Cruzes, SP.</div>
+  </div></footer>
 </body>
 </html>
