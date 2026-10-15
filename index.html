@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14264a">
+
+  <title>Loot Repetido | Pokémon TCG em Mogi das Cruzes</title>
+  <meta name="description" content="Conheça a Loot Repetido, sua loja de Pokémon TCG e colecionáveis em Mogi das Cruzes. Confira nossos produtos e descubra onde comprar.">
+
+  <meta property="og:title" content="Loot Repetido | Pokémon TCG">
+  <meta property="og:description" content="Cartas Pokémon, boosters, Mystery Packs e acessórios para colecionadores.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --navy: #14264a;
+      --yellow: #f5cf38;
+      --cream: #fffdf5;
+      --ink: #20283a;
+      --muted: #687184;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: -.5px;
+    }
+
+    .logo span { color: var(--yellow); }
+
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { text-decoration: none; font-size: .92rem; }
+
+    .hero {
+      background: var(--navy);
+      color: white;
+      padding: 76px 6% 88px;
+    }
+
+    .hero-content { max-width: 760px; margin: auto; }
+
+    .eyebrow {
+      color: var(--yellow);
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 7vw, 4.8rem);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #e0e6f2;
+      font-size: 1.1rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 800;
+      background: var(--yellow);
+      color: var(--navy);
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid #7786a5;
+    }
+
+    main { padding: 54px 6%; }
+    .content { max-width: 1050px; margin: auto; }
+
+    h2 {
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      line-height: 1.2;
+      color: var(--navy);
+      letter-spacing: -.7px;
+    }
+
+    .intro { max-width: 680px; color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .item {
+      padding: 24px;
+      border: 1px solid #e8e6dc;
+      border-radius: 16px;
+      background: white;
+    }
+
+    .item .emoji { font-size: 2rem; }
+    .item h3 { color: var(--navy); margin-bottom: 8px; }
+    .item p { color: var(--muted); font-size: .95rem; }
+
+    .local {
+      background: #f3f0e5;
+      border-radius: 18px;
+      padding: 28px;
+      margin-top: 36px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      padding: 32px 6%;
+      text-align: center;
+    }
+
+    footer p { color: #d8dfed; font-size: .9rem; }
+
+    @media (max-width: 520px) {
+      header { align-items: flex-start; flex-direction: column; }
+      .hero { padding-top: 54px; }
+      main { padding-top: 38px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="#" style="text-decoration:none">
+      LOOT <span>REPETIDO</span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">A loja</a>
+      <a href="#comprar">Onde comprar</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Pokémon TCG • Mogi das Cruzes</div>
+      <h1>Seu próximo hit pode estar aqui.</h1>
+      <p>
+        Boosters, cartas colecionáveis, Mystery Packs e acessórios
+        para quem vive o universo Pokémon TCG.
+      </p>
+      <div class="actions">
+        <a class="button" href="#produtos">Explorar produtos</a>
+        <a class="button secondary" href="#comprar">Onde comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="content">
+      <section id="produtos">
+        <div class="eyebrow">Encontre seu próximo tesouro</div>
+        <h2>O que você está procurando?</h2>
+        <p class="intro">
+          De boosters para abrir a acessórios para proteger sua coleção,
+          tem sempre algo para quem gosta de Pokémon TCG.
+        </p>
+
+        <div class="grid">
+          <article class="item">
+            <div class="emoji" aria-hidden="true">🃏</div>
+            <h3>Cartas Pokémon</h3>
+            <p>Cartas para colecionar, descobrir e completar sua coleção.</p>
+          </article>
+
+          <article class="item">
+            <div class="emoji" aria-hidden="true">🎴</div>
+            <h3>Boosters e blisters</h3>
+            <p>Abra novos pacotes e descubra quais cartas vêm por aí.</p>
+          </article>
+
+          <article class="item">
+            <div class="emoji" aria-hidden="true">🎁</div>
+            <h3>Mystery Packs</h3>
+            <p>Uma experiência surpresa para os fãs de Pokémon TCG.</p>
+          </article>
+
+          <article class="item">
+            <div class="emoji" aria-hidden="true">🛡️</div>
+            <h3>Acessórios</h3>
+            <p>Top loaders e outros itens para cuidar das suas cartas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="local" id="sobre">
+        <div class="eyebrow">Feita para colecionadores</div>
+        <h2>Pokémon TCG em Mogi das Cruzes</h2>
+        <p>
+          A Loot Repetido é uma loja voltada ao universo das cartas
+          colecionáveis, com foco em Pokémon TCG. Explore nossos canais
+          de venda para consultar os produtos disponíveis.
+        </p>
+      </section>
+
+      <section id="comprar" style="padding-top:36px">
+        <h2>Encontre a Loot Repetido</h2>
+        <p class="intro">
+          Confira nossos produtos nos canais de venda e acompanhe
+          as novidades da loja.
+        </p>
+
+        <div class="actions">
+          <!-- Substitua os links abaixo pelos endereços reais da loja. -->
+          <a class="button" href="https://shopee.com.br/"
+             target="_blank" rel="noopener noreferrer">Loja na Shopee</a>
+          <a class="button" href="https://www.ifood.com.br/"
+             target="_blank" rel="noopener noreferrer">Peça pelo iFood</a>
+          <a class="button secondary"
+             style="color:var(--navy);border-color:#c8cbd2"
+             href="https://www.instagram.com/"
+             target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+        <p style="font-size:.85rem;color:var(--muted)">
+          Os botões ainda usam links genéricos. Vamos inserir os links
+          oficiais da Loot antes de divulgar o site.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">LOOT <span>REPETIDO</span></div>
+    <p>Pokémon TCG e colecionáveis em Mogi das Cruzes, SP.</p>
+    <p>© <span id="year">2026</span> Loot Repetido</p>
+  </footer>
+</body>
+</html>
